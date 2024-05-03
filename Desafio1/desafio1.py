@@ -54,5 +54,5 @@ while True:
         break
 
    
-print(extrato, sep="####")      
+print(extrato)      
 quit()
