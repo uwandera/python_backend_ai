@@ -8,7 +8,7 @@ SAIR --> [Q]
 >>> '''
 
 saldo = 1
-extrato = ""
+extrato = ("")
 Limite_Saque_Diario = 3
 LIMITE_VALOR_POR_SAQUE = 500
 
@@ -24,7 +24,7 @@ while True:
             saldo += valor
             print(f"Seu saldo é de R$ {saldo:2.2f}")
             #OPERAÇÂO DE GUARDAR O DEPOSITO NO EXTRATO
-            extrato = (f"DEPÒSITO: R$ {valor:.2f}")
+            extrato += (f"DEPÒSITO: R$ {valor:.2f} "+"\n")
             
         
         else:
@@ -43,18 +43,16 @@ while True:
                         #a ordem do "-="-->(saldo = saldo - saque) ou "=-" -->(saldo = -saque) muda totalmente a conta que está sendo feita, usar saldo -= 
                         saldo -= saque
                         print(f"Seu saldo é de R$ {saldo:2.2f}")
+                        extrato += (f"SAQUE: R$ {saque:.2f} "+"\n")
                 continuar = input(f"deseja fazer mais um saque, seu limite diario é de {Limite_Saque_Diario - 1} (S ou N):  ")
                 if continuar == "s":
                     Limite_Saque_Diario -= 1
                 elif continuar == "n":
                     break
 
-    #elif opcao == "e":
+    elif opcao == "q":
+        break
 
-
-            
-                
-            
    
-        
+print(extrato, sep="####")      
 quit()
