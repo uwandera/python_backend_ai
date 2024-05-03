@@ -43,7 +43,7 @@ while True:
                         #a ordem do "-="-->(saldo = saldo - saque) ou "=-" -->(saldo = -saque) muda totalmente a conta que está sendo feita, usar saldo -= 
                         saldo -= saque
                         print(f"Seu saldo é de R$ {saldo:2.2f}")
-                continuar = input(f"deseja fazer mais um saque, seu limite diario é de {Limite_Saque_Diario} (S ou N):  ")
+                continuar = input(f"deseja fazer mais um saque, seu limite diario é de {Limite_Saque_Diario - 1} (S ou N):  ")
                 if continuar == "s":
                     Limite_Saque_Diario -= 1
                 elif continuar == "n":
