@@ -16,15 +16,22 @@ LIMITE_VALOR_POR_SAQUE = 500
 
 while True:
     opcao = input(menu)
-    if opcao.upper == "D":
+    if opcao == "d":
         # OPERAÇÂO DEPÒSITO
         valor = float(input("Qual o valor que deseja depositar: "))
         #verificação para garantir que valores não são negativos
         if valor > 0: 
             saldo =+ valor
-        #OPERAÇÂO DE GUARDAR O DEPOSITO NO EXTRATO
+            print(f"Seu saldo é de R${saldo:2.2f}")
+            #OPERAÇÂO DE GUARDAR O DEPOSITO NO EXTRATO
+            extrato = (f"DEPÒSITO: R$ {valor:.2f}")
+        
         else:
             print("valor inválido, tente novamente!")
             break
+
+        
+        
+    
 
 quit()
