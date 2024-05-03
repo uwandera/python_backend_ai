@@ -1,6 +1,4 @@
-menu = f'''
-######  QUAL OPERAÇÂO VOCÊ DESEJA EFETUAR   ######
-
+menu = f'''######  QUAL OPERAÇÂO VOCÊ DESEJA EFETUAR   ######
 SAQUE --> [S]
 DEPOSITO --> [D]
 EXTRATO --> [E]
@@ -49,10 +47,19 @@ while True:
                     Limite_Saque_Diario -= 1
                 elif continuar == "n":
                     break
+                else:
+                    print("este valor não é válido, tente novamente")
+                    break
 
     elif opcao == "q":
         break
 
+    elif opcao == "e":
+        print(extrato)
+    
+    else:
+        break
+
    
-print(extrato)      
+      
 quit()
