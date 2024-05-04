@@ -1,7 +1,10 @@
 
 #lista pode ser tratada como um tipo de vetor
 frutas = ["laranja", "maçã", "uva","banana","carambola","manga"]
-print(frutas)
+print(frutas[0],
+      frutas[3],
+      frutas[-1],
+      frutas[-6])
 
 #listas podem ser vazias
 frutas = []
