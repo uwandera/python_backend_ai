@@ -102,13 +102,21 @@ def criar_conta(agencia, numero_conta, usuario):
 
 
 
-'''
+
 
 def listar_contas(contas):
+    for conta in contas:
+        linha = f""" 
+            Agência\t\t{conta['agencia']}
+            C/C:\t\t{conta['numero_conta']}
+            Titular:\t{conta['usuario']['nome']}
+            """
+        print("="*100)
+        print(textwrap.dedent(linha))
 
 
 
-'''
+
 
 def main():
     LIMITE_SAQUE = 3
@@ -150,7 +158,7 @@ def main():
 
         elif opcao == "nc":
             numero_conta = len(contas) + 1
-            conta = criar_conta(AGENCIA, numero_conta, usuarios, contas)
+            conta = criar_conta(AGENCIA, numero_conta, usuarios)
 
             if conta:
                 contas.append(conta)
