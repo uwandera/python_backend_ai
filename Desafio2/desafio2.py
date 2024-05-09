@@ -56,12 +56,15 @@ def sacar(*, saldo, valor, extrato,limite,numero_saques,limite_saques):
 
 
 
-'''
+
 def exibir_extrato(saldo, /, *,extrato):
+    print("\n================= EXTRATO =================")
+    print("não foram realizadas movimentações" if not extrato else extrato)
+    print(f"\nSaldo:\t\tR$ {saldo:.2f}")
+    print("===============================================")
 
 
-
-
+'''
 def criar_usuario(usuario):
 
 
