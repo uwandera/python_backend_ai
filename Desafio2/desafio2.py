@@ -30,10 +30,33 @@ def depositar(saldo, valor, extrato, / ):
 
 
 def sacar(*, saldo, valor, extrato,limite,numero_saques,limite_saques):
+    excedeu_saldo = valor > saldo
+    excedeu_limite = valor > limite
+    excedeu_saques = numero_saques >= limite_saques
+
+    if excedeu_saldo:
+        print("\n@@@ operação falha! você não tem saldo suficiente. @@@")
+
+    elif excedeu_limite:
+        print("\n@@@ operação falhou! o valor do saque excede o limite. @@@")
+
+    elif excedeu_saques:
+        print("\n@@@ operação falha! núrmero máximo de saques excedeu. @@@")
+
+    elif valor > 0:
+        saldo -= valor
+        extrato += f"Saque:\t\tR$ {valor:.2f}\n"
+        numero_saques += 1
+        print("\n === Saque realizado com sucesso! ===")
+
+    else:
+        print("\n@@@ operação fálha! O valor informado é inválido. @@@")
+
+    return saldo, extrato
 
 
 
-
+'''
 def exibir_extrato(saldo, /, *,extrato):
 
 
@@ -59,7 +82,7 @@ def listar_contas(contas):
 
 
 
-
+'''
 def main():
     LIMITE_SAQUE = 3
     AGENCIA = "0001"
