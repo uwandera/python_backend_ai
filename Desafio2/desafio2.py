@@ -64,10 +64,23 @@ def exibir_extrato(saldo, /, *,extrato):
     print("===============================================")
 
 
-'''
+
 def criar_usuario(usuario):
+    cpf = input("informe o CPF (somente número): ")
+    usuario = filtrar_usuario(cpf, usuarios)
 
+    if usuario:
+        print("\n@@@ usuário com este cpf já está cadastrado! @@@")
+        return
+    
+    nome = input("informe o nome completo do usuário: ")
+    data_nascimento = input("Informe a data de nascimento (dd-mm-aaaa): ")
+    endereco = input("informe o endereço (logradouro, numero - bairro - cidade/sigla estado): ")
 
+    usuario.append({"nome": nome, "data_nascimento": data_nascimento, "cpf": cpf, "endereço": endereco})
+
+    print("===== Usuário criado com sucesso! =====")
+'''
 
 def filtrar_usuario(cpf, usuario):
 
