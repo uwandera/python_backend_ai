@@ -7,8 +7,9 @@ class Bicicleta:
     # self é uma referencia explicita para o objeto, queremos dizer que essa é a instancia do objeto passado
     # c++ usa this.atributo para fazer a referencia
     #usar self em python como boa pratica, ,mas pode encontrar this.atributo tbm
+    #metodo construtor, inicializar com os atributos do objeto
     def __init__(self , cor, modelo, ano, valor):
-        self.cor = cor #atributos da classe
+        self.cor = cor #atributos da classe {caracteristicas da classe}
         self.modelo = modelo
         self.ano = ano
         self.valor = valor
