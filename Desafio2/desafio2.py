@@ -77,7 +77,7 @@ def criar_usuario(usuario):
     data_nascimento = input("Informe a data de nascimento (dd-mm-aaaa): ")
     endereco = input("informe o endereço (logradouro, numero - bairro - cidade/sigla estado): ")
 
-    usuario.append({"nome": nome, "data_nascimento": data_nascimento, "cpf": cpf, "endereço": endereco})
+    usuarios.append({"nome": nome, "data_nascimento": data_nascimento, "cpf": cpf, "endereço": endereco})
 
     print("===== Usuário criado com sucesso! =====")
 
@@ -107,9 +107,9 @@ def criar_conta(agencia, numero_conta, usuario):
 def listar_contas(contas):
     for conta in contas:
         linha = f""" 
-            Agência\t\t{conta['agencia']}
+            Agência\t\t{conta['agência']}
             C/C:\t\t{conta['numero_conta']}
-            Titular:\t{conta['usuario']['nome']}
+            Titular:\t{conta['usuário']['nome']}
             """
         print("="*100)
         print(textwrap.dedent(linha))
@@ -126,6 +126,7 @@ def main():
     limite = 500
     extrato = ""
     numero_saques = 0
+    global usuarios 
     usuarios = []
     contas = []
 
