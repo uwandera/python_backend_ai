@@ -27,7 +27,7 @@ class Ornitorrinco(Mamifero, Ave):
     pass
 
 
-gato1 = Gato(4)
+gato1 = Gato(nro_patas=4)
 print(gato1)
 
 

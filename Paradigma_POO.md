@@ -17,3 +17,15 @@ Problema: Beber Agua
     classe reserva as caracteristicas e métodos do objeto
     criamos objetos usando classes
     intanciamos objetos para usa-los
+
+##método construtor
+    é executado parar marcar uma nova instancia da classe <método inicializador>
+    nesse método inicializamos o estado do nosso objeto
+    para declarar o método construtor da classe criamos um método como nome __init__.
+
+## método destrutor
+método para deletar a inscia da classe alocada em memoria
+
+## herança 
+ uma classe herdando os atributos da classe que a é passada como argumento
+herda as classes automaticamente
