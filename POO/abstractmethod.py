@@ -44,7 +44,7 @@ class ControleTV(ControleRemoto):
     def desligar(self):
         print("desligando a Tv ... Tv desligada!")
 
-    
+#nao colocar o @property nas funções de implementação ou acorrerá um erro        
     def marca(self):
         return "LG"
 
@@ -55,7 +55,7 @@ class ControleArcondicionado(ControleRemoto):
     def desligar(self):
         print("desligando o AR Condicionando")
 
-    
+#nao colocar o @property nas funções de implementação ou acorrerá um erro    
     def marca(self):
         return "Nokia"
 
