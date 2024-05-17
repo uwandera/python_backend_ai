@@ -96,9 +96,16 @@ class ContaCorrente(Conta):
         
     
 
-class Historico(Conta, Transacao):
-    def adicionar_transacao(cls, transacao):
-        pass
+class Historico:
+    def __init__(self):
+        self._transacoes = []
+
+    @property
+    def transacoes(self):
+        return self._transacoes #esta sendo usada na classe conta corrente
+    
+    def adicionar_transacao(self, transacao):
+        self._transacoes.append
 
 #class abstrata
 class Transacao(ABC):
