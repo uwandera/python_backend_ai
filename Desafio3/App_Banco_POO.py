@@ -1,4 +1,5 @@
-from abc import ABC, abstractmethod 
+from abc import ABC, abstractclassmethod,  abstractmethod, abstractproperty #ainda não sei pq essas propriedades estão cortadas
+from datetime import datetime
 
 
 class Conta:
@@ -34,20 +35,66 @@ class Conta:
     def historico(self):
         return self._historico
     
-    def sacar(self, valor):
+    def sacar(self, valor):# sacar é um pouco diferente de quando apenas usamos funções 
         saldo = self.saldo
         excedeu_saldo = valor > saldo
 
         if excedeu_saldo:
             print("\n@@@ a operação falhou, valor informado não está disponível!")
 
+        elif valor > 0:
+            self._saldo -= valor #saque subitraido do valor em conta
+            print("\n===== operação de saque efetuada com sucesso! =====")
+            return True
+        
+        else:
+            print("\n @@@@@@ operação inválida, tente novamente mais tarde @@@@@@")
+            return False #sera que falso com falso da problema
+        return False #pq esse return funciona com a identação aqui, para sempr retornar falso se não entrar na estrutura If Elif 
 
 
-class ContaCorrente(Conta):
-    def _limite():
-        pass
-    def _limite_saques(): 
-        pass
+    def depositar(self, valor):
+        if valor > 0:
+            self._saldo += valor
+            print("\n @@@@@ deposito realizado com sucesso")
+
+        else:
+            print("\n @@@@@ DEU RUIM, TENTA DENOVO QUEBRADA!")
+            return False
+        return True
+
+
+class ContaCorrente(Conta): 
+    def __init__(self, numero, cliente, limite=500, limite_saques=3):
+        super().__init__(numero, cliente)
+        self.limite = limite
+        self.limite_saques = limite_saques
+
+    def sacar(self, valor): #compressão de listas, pegamos o historico de transações, todas as transações desse histórico e verificando se o tipo de transação foi de saque  ta super estranho esse parte do códio e certeza q vai dar pau
+        numero_saques = len([transacao for transacao in self.historico.transacoes if transacao["Tipo"] == Saque.__name__])#pra que serve este aqui, o nome da classe saque 
+                        #o len() esta sendo usado para contar a quantidade de saques 
+        excedeu_limite = valor > self.limite
+        excedeu_saques = numero_saques > self.limite_saques
+
+        if excedeu_limite:
+            print("\n @@@ limite de sauqe excedido, tente novamente mais tarde! @@@@")
+
+        elif excedeu_saques:
+            print("\n @@@@@ Numero de saques foi excedido, tente novamente mais tarde @@@@@")
+    
+        else:
+            return super().sacar(valor)#essa classe está meio redundante, mas acho q faz sentido quando se trata de um grande banco
+        
+        return False # ao entrar no if ou no elif, damos o retorno padrão de false
+    
+    def __str__(self):
+        return f'''\
+            Agencia: \t{self.agencia}
+            CC:\t\t{self.numero}
+            Titular:\t{self.cliente.mome}
+        '''
+        
+    
 
 class Historico(Conta, Transacao):
     def adicionar_transacao(cls, transacao):
@@ -58,11 +105,6 @@ class Transacao(ABC):
     pass
 
 
-class Deposito(Transacao):
-    pass
-
-class Saque(Transacao):
-    pass
 
 class Cliente:
     #construtor de cliente
