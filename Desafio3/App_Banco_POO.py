@@ -105,12 +105,53 @@ class Historico:
         return self._transacoes #esta sendo usada na classe conta corrente
     
     def adicionar_transacao(self, transacao):
-        self._transacoes.append
+        self._transacoes.append(
+            {
+                "tipo": transacao.__class__.__name__,
+                "valor": transacao.valor,
+                "data": datetime.now().strftime("%d-%m-%Y %H-%M-%s")
+            }
+        )
 
 #class abstrata
 class Transacao(ABC):
-    pass
+    @property
+    @abstractproperty
+    def valor(self):
+        pass
 
+    @abstractclassmethod
+    def registrar(self, conta):
+        pass
+
+
+class Saque(Transacao):
+    def __init__(self, valor):
+        self._valor = valor
+
+    @property
+    def valor(self):
+        return self._valor
+    
+    def registrar(self, conta):
+        sucesso_transacao = conta.sacar(self.valor)
+
+        if sucesso_transacao:
+            conta.historico.adicionar_transacao(self)
+
+class Deposito(Transacao):
+    def __init__(self, valor):
+        self._valor = valor
+
+    @property
+    def valor(self):
+        return self._valor
+    
+    def registrar(self, conta):
+        sucesso_transacao = conta.depositar(self.valor)
+
+        if sucesso_transacao:
+            conta.historico.adicionar_transacao(self)
 
 
 class Cliente:
@@ -129,6 +170,7 @@ class Cliente:
 
 #no diagrama UML vemos que Pessoa fisica deriva de cliente
 class PessoaFisica(Cliente):
+
 #ao inicializar a pessoa física usamos a notação de super().__init__() para dar referencia ao atributos herdados
     def __init__(self, nome, data_nascimento, cpf, endereco):
         super().__init__(endereco)
