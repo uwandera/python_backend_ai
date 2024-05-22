@@ -1,5 +1,6 @@
 from abc import ABC, abstractclassmethod,  abstractmethod, abstractproperty #ainda não sei pq essas propriedades estão cortadas
 from datetime import datetime
+import textwrap
 
 
 class Conta:
@@ -177,3 +178,82 @@ class PessoaFisica(Cliente):
         self.nome = nome
         self.data_nascimento = data_nascimento
         self.cpf = cpf
+
+
+
+
+def menu():
+    menu = """ \n
+    ================= MENU =================
+    [d]\tDepositar
+    [s]\tSacar
+    [e]\tExtrato
+    [nc]\tNova Conta
+    [lc]\Listar Contas
+    [nu]\tNovo Usuário
+    [q]\tSair
+    ==>  """
+    return input(textwrap.dedent(menu))
+
+def filtrar_cliente(cpf, clientes):
+    clientes_filtrados = [cliente for cliente in clientes if cliente.cpf == cpf ]
+    return clientes_filtrados[0] if clientes_filtrados else None
+
+def recuperar_conta_clientes(cliente):
+    if not cliente.contas:
+        print("\n@@@@@ Cliente não possui conta! @@@@@")
+        return
+    # FIXME: não permite cliente escolher a conta
+    return cliente.contas[0]
+
+def depositar(clientes):
+    cpf = input("informe o CPF do cliente: ")
+    cliente = filtrar_cliente(cpf, clientes)
+
+    if not cliente:
+        print("\n @@@@@@ Cliente não encontrado! @@@@@@")
+        return
+    
+    valor = float(input("Informe o valor do deposito: "))
+    transacao = Deposito(valor)
+
+    conta = recuperar_conta_cliente(cliente)
+    if not conta:
+        return
+    cliente.realizar_transacao(conta, transacao)
+
+def sacar(clientes):
+
+
+
+def main():
+    clientes = []
+    contas = []
+
+    while True:
+        opcao = menu()
+
+        if opcao == "d":
+            de(clientes)
+            
+        elif opcao == "s":
+           
+        
+        elif opcao == "e":
+            
+
+        elif opcao == "nu":
+           
+
+        elif opcao == "nc":
+           
+            
+        
+        elif opcao == "lc":
+            
+
+        elif opcao == "q":
+            break
+
+        else:
+            print("Operação inválida, por favor selecione novamente a operação desejada
