@@ -1,0 +1,15 @@
+Os padrões de comportamento de um ataque cibernético podem variar, mas geralmente envolvem várias etapas. Vou explicar algumas delas:
+
+1. **Entrega**: Os hackers usam vários métodos para entregar seus códigos maliciosos em uma rede-alvo. Isso pode incluir e-mails de phishing, sites comprometidos ou dispositivos USB infectados.
+
+2. **Exploração**: Uma vez dentro da rede, os hackers exploram vulnerabilidades para obter acesso a um sistema. Isso pode envolver a exploração de falhas de software, senhas fracas ou configurações inadequadas.
+
+3. **Elevação de privilégios**: Os atacantes buscam aumentar suas permissões dentro do sistema, permitindo-lhes acessar níveis mais altos de controle. Isso pode envolver a obtenção de acesso de administrador ou outras permissões privilegiadas.
+
+4. **Movimentação lateral**: Uma vez dentro da rede, os hackers se movem lateralmente para outros sistemas. Eles exploram conexões entre dispositivos para se espalhar e encontrar alvos adicionais.
+
+5. **Exfiltração de dados**: Os atacantes procuram roubar informações valiosas, como dados pessoais, segredos comerciais ou informações financeiras. Isso pode ser feito de forma discreta para evitar detecção.
+
+6. **Estabelecimento de persistência**: Os hackers tentam manter o acesso à rede, criando backdoors ou implantando malware persistente. Isso permite que eles retornem e continuem seus ataques futuramente.
+
+Lembre-se de que esses padrões podem variar dependendo do tipo de ataque e das táticas específicas usadas pelos cibercriminosos. A detecção precoce e a proteção adequada são essenciais para mitigar os riscos de um ataque cibernético.
