@@ -1,0 +1,33 @@
+Para gerenciar um ambiente virtual para uso de pacotes antigos e versionamento de código obsole
+
+usar:
+python 3 -m venv <nome do projeto>
+
+source <nome do projeto>/bin/activate
+comando não funciona nesta versão de python,
+tive que fazer uma mudança de permissão para rodar o comando:
+    activate <nome do ambiente virtual>
+
+
+Pipenv é uma ferramenta de gerencialmento de dependencias que faz todo  gerenciamento automatico da arvore de dependencias quando se faz necessario o unistall
+
+
+Poetry é uma ferramenta de gerenciamente de dependencias, usual para criar seus proprios projetos e dependecias para o Pypi
+
+poetry and Pipenv are nice
+
+snake_case para variaveis e funções
+CamelCase para classes
+
+pip install flake8 
+flake8 <meucodigo.py> #ultilitario de linha de comando
+
+ferramentas de formataçãi de codigo são chamadas de linter
+
+pip install black
+black <meuscript.py>
+
+Isort é uma ferramenta de ordenar e categorizar as importações
+
+pip install isort
+isort <myScrypt.py>
