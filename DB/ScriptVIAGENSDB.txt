@@ -1,0 +1,53 @@
+CREATE TABLE IF NOT EXISTS USUARIO(
+_id INTEGER PRIMARY KEY, -- aqui é o id com chave primaria --
+_nome TEXT,
+_data_nascimento,
+_logradouro TEXT
+);
+
+CREATE TABLE IF NOT EXISTS RESERVA(
+_idRESERVA INTEGER PRIMARY KEY, -- aqui é o id com chave primaria --
+_nome TEXT NOT NULL,
+_status CHAR,
+_data date,
+_idUSUARIO INTEGER,
+FOREIGN KEY (_idUSUARIO) REFERENCES USUARIO(_id) 
+
+);
+
+CREATE TABLE IF NOT EXISTS DESTINO(
+_idDESTINO INTEGER PRIMARY KEY, -- aqui é o id com chave primaria --
+_nome TEXT,
+_data_reserva datetime, 
+_logradouro TEXT,
+_chave_reserva integer,
+FOREIGN KEY (_chave_reserva) REFERENCES RESERVA(_idRESERVA)
+);
+
+ALTER TABLE USUARIO
+ADD <nome da coluna e seus atributos>; -- adiciona uma coluna e seus atributos --
+
+
+INSERT INTO USUARIO
+(_id, _nome, _data_nascimento, _logradouro, _email )
+VALUES
+("1","Alice","1995-07-23","rua shelly may, 777", "alice_cript@gmail.com"),
+("2"," Bob"," 1993-08-23", "rua parker 77" ," bob_cash@gmail.com");
+
+SELECT _id 
+FROM USUARIO
+WHERE -id < 3
+ORDER BY _nome ASC;
+
+<comando para  migrar tabelas>
+INSERT INTO <Nova_table>
+(colunas da nova table)
+SELECT (colunas da tabela antiga separadas por virgula)
+FROM <nome tabela antiga>;
+
+ALTER TABLE <nome da tabela> RENAME <nome novo> -- renomeia a tabela --
+
+ALTER TABLE <nome da tabela> MODIFY COLUMN <nome da coluna e seus atributos>;
+
+
+
