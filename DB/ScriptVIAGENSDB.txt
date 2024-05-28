@@ -49,5 +49,20 @@ ALTER TABLE <nome da tabela> RENAME <nome novo> -- renomeia a tabela --
 
 ALTER TABLE <nome da tabela> MODIFY COLUMN <nome da coluna e seus atributos>;
 
+uso de constraints para excluir em cascata
 
 
+Normalização de dados:
+    primeira forma Normal:
+        registros unicos e identificaveis: separa logradouro em clounas individuais
+    segunda forma Normal:
+        chave primaria
+    terceira forma normal:
+        atributos depende apenas das chaves normais e extrangeiras
+
+    
+Inner Join:
+    SELECT columns
+    FROM table1 
+    INNER JOIN table2
+    ON table1.column = table2.column;
