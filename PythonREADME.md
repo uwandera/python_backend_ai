@@ -38,3 +38,10 @@ equação
 	x = 10-5*2 
 	x = (10-5)*2
 	X = 10-(5*2)
+
+## Lista
+ lista em pyton é uma sequencia que pode armazenar qualquer tipo de objeto
+ em python tudo é objeto
+ list pode ter inteiro, float, outras listas, classes, objetos dentro da lista
+ list(var) ou var = [] ou
+

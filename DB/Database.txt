@@ -1,0 +1,71 @@
+
+banco de dados:
+    relacional
+    não relacional
+    orientado a objeto
+
+SGBD:
+    postgres
+    mysql
+    sqlite
+    mariaDB
+    MongoDB
+
+CRUD:
+    Create
+    Read
+    Update
+    Delete
+
+Estrutura de um DB relacional:
+    Tabelas compostas por colunas
+    registro =  conjunto de informações
+    chaves primarias ---> identificadores unicos
+    chaves estrangeiras ---> relacionamento entre as Tabelas
+    linguagem de consulta estruturada
+    normalização de dados
+
+ACID:
+    grantia da conscistencia da informação
+    Atomicidade
+    conscistencia
+    Isolmento
+    Durabilidade
+
+SQL:
+    Structured Query Language:
+        DQL: Data Query Language:
+            SELECT >>> consulta de dados, recuperar informação armazenada no banco
+
+        DML: Data Manipulation Language:
+            INSERT, UPDATE, DELETE >>> consultar, alterar e exluir informação
+
+        DDL: Data DEfinition Language:
+            CREATE, ALTER, DROP >>> estruturação da tabela, onde sera armazenada, quais tipos de dados
+        
+        DCL: Data Control Language:
+            GRANT, REVOKE >>> permissionamentos de usuarios para manipulação de dados
+
+        DTL: Data Transaction language:
+            BEGIN, COMMIT, ROLLBACK >>> garantia da execução das propriedades anteriores
+
+
+Nomenclatura:
+    nomenclatura de tabela: TABELA
+    nomenclatura de coluna: _Nome
+
+
+MER: Modelo de Entidade relacional
+
+DER: Diarama de Entidade Relacional
+        
+
+Os relacinamentos entre entidades necessitam de suas conexões nomeadas
+
+a cardinalidade é o numero de instancias q entidades podem se relaciona:
+    1..1(um para um)
+    1..n(um para muitos) or 1..
+    n..n(muitos para muitos) or ..
+
+
+

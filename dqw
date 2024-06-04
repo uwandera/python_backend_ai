@@ -1,0 +1,257 @@
+[33mcommit a2deddf41e18424c2b7d9cd9dbaa97855c225e7b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mPOO[m[33m, [m[1;31morigin/POO[m[33m)[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Fri May 17 23:07:06 2024 -0300
+
+    finalizado o mapeamento de classes onde saberia fazer 30% apenas
+
+[33mcommit 909200eccfc1d7a6b8f8747247975085df5ca330[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Fri May 17 00:57:36 2024 -0300
+
+    sera que um dia serei bom nisso
+
+[33mcommit 96812e09628fd61a50eac89c0907d1c16e5bf850[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Fri May 17 00:14:11 2024 -0300
+
+    dando commit mesmo com dengue..38graus de febre
+
+[33mcommit ea35c8a3dde57cff3dcd35ba7eb316e86dfe61a3[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Wed May 15 00:14:39 2024 -0300
+
+    Primeiras etapas das classes, atributos e métodos necessarios para transpor o projeto 2 no 3
+
+[33mcommit af79f094e75a695246dd4b86bc18f1dd8eb9f772[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Tue May 14 19:08:44 2024 -0300
+
+    atualização antes do projeto 3
+
+[33mcommit e01f214735c8052b7df6d40d123826bd4c29916a[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Mon May 13 13:38:37 2024 -0300
+
+    herança multipla necessita de uma revisão!
+
+[33mcommit fc7dfbededf97bac16659f7867d1c6c04fdca104[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Mon May 13 01:55:50 2024 -0300
+
+    herança multipla ta sendo um saco em
+
+[33mcommit e01ee6b39a3af0d9e9e4687679c7fee689c5b93b[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Mon May 13 00:28:48 2024 -0300
+
+    Herança em POO é di Buenas...NOT
+
+[33mcommit 47ebffc905cf8331cb0b1c6a33d75fb3ce3ff21c[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Sun May 12 22:18:04 2024 -0300
+
+    primeiros comandos de POO
+
+[33mcommit 32df9c0793ebdd483b728b647596ad818cb9d4f1[m[33m ([m[1;31morigin/desafio02[m[33m, [m[1;32mdesafio02[m[33m)[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Thu May 9 14:33:26 2024 -0300
+
+    finished
+
+[33mcommit 44fe80deb7e37dfe605206be01ef6584490b0c2b[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Thu May 9 14:10:08 2024 -0300
+
+    modulo de criar_conta()
+
+[33mcommit e7a263cd721c441e37003b2d04639afffe002a74[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Thu May 9 13:45:39 2024 -0300
+
+    modulo def criar_usuario() com funçaõ de filtragem por cpf
+
+[33mcommit 3489a66b6da74e10d5644a251c1d02a2dfd770c3[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Thu May 9 02:14:08 2024 -0300
+
+    modulo def extrato() com as regras hibridas posição e nome
+
+[33mcommit 01e85a93c49c827b5ed1ebfeb67bc384d7a82c82[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Thu May 9 02:05:07 2024 -0300
+
+    modulo def sacar()
+
+[33mcommit b384061b1fa84351f9e23ab8729029384840dce4[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Thu May 9 01:46:08 2024 -0300
+
+    modulo def main() e  def deposito()
+
+[33mcommit d23c4aacf092d720254eb1a8231e3e1bc5b0a6a5[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Tue May 7 17:43:03 2024 -0300
+
+    readme atualizado
+
+[33mcommit 3d36a0ef6c9fd21b3eb6fd419caa170767a34177[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Tue May 7 17:34:19 2024 -0300
+
+    branch nova só para atualizar sobre o desafio 02
+
+[33mcommit 77bb99471cf8c70a896f8bceaa34cb199f088b27[m[33m ([m[1;31morigin/estruturas01[m[33m, [m[1;32mestruturas01[m[33m)[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Tue May 7 04:01:17 2024 -0300
+
+    funcoes e seus parametros fazendo toda a diferenca, revisitar quando for preciso
+
+[33mcommit 7084a0dc042aa0bb5c5f836e3ef4b207fb3f6522[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Mon May 6 16:45:16 2024 -0300
+
+    ultimo antes da mudança de branch
+
+[33mcommit 6f429346bf1f436e7df7143af759030df6913081[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Mon May 6 16:37:38 2024 -0300
+
+    Dicionarios e seus métodos, revisitar sempre que precisar
+
+[33mcommit 8b44e957acc1288302398ca0cf2ceabfd8ebd1f3[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Mon May 6 01:10:22 2024 -0300
+
+    todos os conjuntos (var = sets([]) or var = {}) e seus métodos
+
+[33mcommit d6980f9007078fb07feffeb29aa5f6be9f93a5ba[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Sun May 5 22:53:24 2024 -0300
+
+    tuplas são um tipo de lista, mas imutaveis!
+
+[33mcommit baae09bfeb02649a8cd01bc942b089d8eec82a1a[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Sun May 5 03:54:17 2024 -0300
+
+    métodos de listas(muito importantes)
+
+[33mcommit a37c9d1aa09b33ff1acd126767dba7b02793ce12[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Sun May 5 02:27:06 2024 -0300
+
+    estudos de estrutura de dados e POO
+
+[33mcommit 238a6c0d82ebeeedf8b78bea04bea857150474a8[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Sat May 4 01:31:47 2024 -0300
+
+    tentando manter a streak..melhor dormir
+
+[33mcommit 35157eb25f3c619f08f3750c00e2e796b4c41032[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Sat May 4 01:04:39 2024 -0300
+
+    declaração de listas
+
+[33mcommit d9542aeabe03aae683376049f4e67479a1469bd4[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Sat May 4 00:49:24 2024 -0300
+
+    primeiro commit da nova branch
+
+[33mcommit 4718b617b4dfb0f78354fbddf7c68b8e503a3b35[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Fri May 3 16:31:05 2024 -0300
+
+    todos os 3 módulos funcionando, com alguns issues que irei apontar
+
+[33mcommit 4fd1f1f911f5d3e8bcdb4234b6ceb55a9aa57a3a[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Fri May 3 16:10:00 2024 -0300
+
+    limpesa do codigo
+
+[33mcommit cb66ba8170afda7176936705d7a40b2031515e02[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Fri May 3 16:07:27 2024 -0300
+
+    módulo extrato v0.1
+
+[33mcommit 005c1f5e4126764b574668a5c9f2860ca049f79f[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Fri May 3 15:46:56 2024 -0300
+
+    módulo saque v1.0
+
+[33mcommit 10d283fe9171e2e6c114d37855432dc3c733fe67[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Fri May 3 15:30:32 2024 -0300
+
+    módulo saque v0.99
+
+[33mcommit 5eb9539b809abf82d89ad1a12483456e255a5b65[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Fri May 3 03:53:37 2024 -0300
+
+    módulo de deposito .9
+
+[33mcommit 45f9704a9be93e9f07bec0f934cff1a96b7a0bcd[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Fri May 3 03:32:03 2024 -0300
+
+    atualização do README
+
+[33mcommit 4701beb2b69f0063dbdd9ada3f268c2ef697b617[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Fri May 3 03:30:25 2024 -0300
+
+    módulo de deposito .5 pronto
+
+[33mcommit 94bb606145f0a3898b8eceb237946cb5ca44936d[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Fri May 3 02:12:36 2024 -0300
+
+    commit final do modulo fundamental de python
+
+[33mcommit 88823240fa7c7219d73b4a04e6e839983deb007d[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Fri May 3 01:06:22 2024 -0300
+
+    usando[] .format()
+
+[33mcommit 6fc9ed340fa6be4d87105e07f7459440e6841689[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Thu May 2 16:53:04 2024 -0300
+
+    partes fundamentais de estrutura de repetição e manipulação de strings
+
+[33mcommit eb87e9e68f6b9abee1edc8d6ff4041f48f288505[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Thu May 2 04:24:59 2024 -0300
+
+    bootcamp yeyeye, i'm tired, going to sleep...i think i'm doing good
+
+[33mcommit 1bf9fd75214fd4ca2d914a7008201f7b6d6a44e3[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Thu May 2 03:00:19 2024 -0300
+
+    estruturas condicionais fundamentais
+
+[33mcommit 8b1c1c572f3e54e10194413a2da734bde24117f4[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Thu May 2 02:19:45 2024 -0300
+
+    identação e manutenção de código(um pouco de função e if)
+
+[33mcommit a43c95154ff6f38addecef2245356115425accd7[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Thu May 2 01:46:00 2024 -0300
+
+    add repo de certificados dos modulos
+
+[33mcommit 96c3c596955066d41bdda5239e6c588c253d642b[m
+Author: uwandera <tomuwande@gmail.com>
+Date:   Thu May 2 01:38:58 2024 -0300
+
+    Programas dos módulos fundamentais do bootcamp
